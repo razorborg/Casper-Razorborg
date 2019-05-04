@@ -1,3 +1,10 @@
+{{#if background}}
+<style type="text/css">
+.site-header {
+    background-image: url({{img_url background size='m'}});
+}
+</style>
+{{/if}}
 <nav class="site-nav">
     <div class="site-nav-left">
         {{^is "home"}}

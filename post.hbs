@@ -5,7 +5,7 @@ into the {body} of the default.hbs template --}}
 
 <header class="site-header outer">
     <div class="inner">
-        {{> "site-nav"}}
+        {{> "site-nav" background=@site.cover_image}}
     </div>
 </header>
 
@@ -20,9 +20,10 @@ into the {body} of the default.hbs template --}}
             <header class="post-full-header">
                 <section class="post-full-meta">
                     <time class="post-full-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time>
-                    {{#primary_tag}}
+                    {{#foreach tags}}
                         <span class="date-divider">/</span> <a href="{{url}}">{{name}}</a>
-                    {{/primary_tag}}
+                    {{/foreach}}
+
                 </section>
                 <h1 class="post-full-title">{{title}}</h1>
             </header>

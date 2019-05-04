@@ -4,7 +4,7 @@
 {{#tag}}
 {{> header background=feature_image}} {{!--Special header.hbs partial to generate the <header> tag--}}
     <div class="inner">
-        {{> "site-nav"}}
+        {{> "site-nav" background=@site.cover_image}}
         <div class="site-header-content">
             <h1 class="site-title">{{name}}</h1>
             <h2 class="site-description">
