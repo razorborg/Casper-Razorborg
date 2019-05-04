@@ -461,6 +461,9 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     align-items: flex-end;
     padding: 0 25px 25px;
 }
+.post-card-date {
+    color: var(--blue);
+}
 
 .author-profile-image,
 .avatar-wrapper {

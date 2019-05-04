@@ -21,9 +21,12 @@
         <a class="post-card-content-link" href="{{url}}">
 
             <header class="post-card-header">
-                {{#if primary_tag}}
-                    <span class="post-card-tags">{{primary_tag.name}}</span>
-                {{/if}}
+                <span class="post-card-tags">
+                    {{#if primary_tag}}
+                        {{primary_tag.name}} / 
+                    {{/if}}
+                    <span class="post-card-date">{{date timeago="true"}}</span>
+                </span>
                 <h2 class="post-card-title">{{title}}</h2>
             </header>
 
